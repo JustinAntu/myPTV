@@ -11,7 +11,19 @@ import SwiftUI
 struct myPTVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            
+            //perform(#selector(switchViews), with: nil, afterDelay: 4.0)
+
+            //func switchViews() {
+                mainScreen()
+            //}
+            
+            
         }
-    }
+        
+       }
+        
+        
+    
 }

@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            Color(red: 0.976, green: 0.976, blue: 0.953).ignoresSafeArea()
+            
+            VStack{
+                Text("MyPTV").font(.largeTitle).fontWeight(.semibold)
+                
+                Image("ptvLogo").resizable().cornerRadius(15).aspectRatio(contentMode: .fit).padding(.all)
+            }
         }
-        .padding()
     }
 }
 
